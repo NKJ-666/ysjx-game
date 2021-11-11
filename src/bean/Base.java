@@ -1,45 +1,47 @@
 package bean;
 
+import java.awt.*;
+
 public class Base {
     //坐标
-    private float xMin;
-    private float yMin;
-    private float xMax;
-    private float yMax;
+    private int xMin;
+    private int yMin;
+    private int xMax;
+    private int yMax;
 
     //图片
-    private String image;
+    private Image image;
 
     //设置图片
-    public void setImage(String image){
+    public void setImage(Image image){
         this.image = image;
     }
 
     //设置坐标
-    public void setCoordinate(float xMin, float yMin, float xMax, float yMax){
+    public void setCoordinate(int xMin, int yMin, int xMax, int yMax){
         this.xMax = xMax;
         this.xMin = xMin;
         this.yMax = yMax;
         this.yMin = yMin;
     }
 
-    public float getxMin() {
+    public int getxMin() {
         return xMin;
     }
 
-    public float getyMin() {
+    public int getyMin() {
         return yMin;
     }
 
-    public float getxMax() {
+    public int getxMax() {
         return xMax;
     }
 
-    public float getyMax() {
+    public int getyMax() {
         return yMax;
     }
 
-    public String getImage() {
+    public Image getImage() {
         return image;
     }
 }
